@@ -1,0 +1,12 @@
+{
+  "events": [
+    {
+      "command": "sleep 2;"
+    }
+  ],
+  "verification": {
+    "path": ".",
+    "value": "1",
+    "command": "echo $(($(($RANDOM%10))%2));"
+  }
+}
